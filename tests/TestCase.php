@@ -1,6 +1,6 @@
 <?php
 
-namespace DataLinx\PhpPackageTemplate\Tests;
+namespace Eclipse\PluginTemplate\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

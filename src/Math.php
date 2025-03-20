@@ -1,6 +1,6 @@
 <?php
 
-namespace DataLinx\PhpPackageTemplate;
+namespace Eclipse\PluginTemplate;
 
 class Math
 {

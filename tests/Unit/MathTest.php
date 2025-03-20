@@ -1,6 +1,6 @@
 <?php
 
-use DataLinx\PhpPackageTemplate\Math;
+use Eclipse\PluginTemplate\Math;
 
 test('it adds two numbers', function () {
     expect(Math::add(1, 2))->toBe(3);

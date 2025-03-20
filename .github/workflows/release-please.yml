@@ -16,4 +16,4 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: php
-          package-name: php-package-template
+          package-name: eclipsephp-plugin-template

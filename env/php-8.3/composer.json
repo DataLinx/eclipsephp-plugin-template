@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "DataLinx\\PhpPackageTemplate\\": "src/"
+            "Eclipse\\PluginTemplate\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DataLinx\\PhpPackageTemplate\\Tests\\": "tests/"
+            "Eclipse\\PluginTemplate\\Tests\\": "tests/"
         }
     }
 }

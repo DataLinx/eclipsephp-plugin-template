@@ -1,11 +1,11 @@
 {
-    "name": "datalinx/php-package-template",
+    "name": "eclipsephp/plugin-template",
     "description": "PHP package template",
     "keywords": [
         "php",
         "template"
     ],
-    "homepage": "https://github.com/datalinx/php-package-template",
+    "homepage": "https://github.com/eclipsephp/plugin-template",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -23,20 +23,20 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "DataLinx\\PhpPackageTemplate\\": "src/"
+            "Eclipse\\PluginTemplate\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DataLinx\\PhpPackageTemplate\\Tests\\": "tests/"
+            "Eclipse\\PluginTemplate\\Tests\\": "tests/"
         }
     },
     "require": {
-        "php": "^8.3"
+        "php": "^8.2"
     },
     "require-dev": {
         "laravel/pint": "^1.21",
-        "pestphp/pest": "^3.7.4"
+        "pestphp/pest": "^3.7"
     },
     "scripts": {
         "format": "vendor/bin/pint",

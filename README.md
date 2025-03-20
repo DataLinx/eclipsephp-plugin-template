@@ -1,12 +1,12 @@
 # PHP Package Template
 
-![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/datalinx/php-package-template)
-![Packagist Version](https://img.shields.io/packagist/v/datalinx/php-package-template)
-![Packagist Downloads](https://img.shields.io/packagist/dt/datalinx/php-package-template)
-[![Test runner](https://github.com/DataLinx/php-package-template/actions/workflows/test-runner.yml/badge.svg)](https://github.com/DataLinx/php-package-template/actions/workflows/test-runner.yml)
-[![codecov](https://codecov.io/gh/DataLinx/php-package-template/graph/badge.svg?token=1HKSY5O6IW)](https://codecov.io/gh/DataLinx/php-package-template)
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/eclipsephp/plugin-template)
+![Packagist Version](https://img.shields.io/packagist/v/eclipsephp/plugin-template)
+![Packagist Downloads](https://img.shields.io/packagist/dt/eclipsephp/plugin-template)
+[![Test runner](https://github.com/DataLinx/eclipsephp-plugin-template/actions/workflows/test-runner.yml/badge.svg)](https://github.com/DataLinx/eclipsephp-plugin-template/actions/workflows/test-runner.yml)
+[![codecov](https://codecov.io/gh/DataLinx/eclipsephp-plugin-template/graph/badge.svg?token=1HKSY5O6IW)](https://codecov.io/gh/DataLinx/eclipsephp-plugin-template)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
-![Packagist License](https://img.shields.io/packagist/l/datalinx/php-package-template)
+![Packagist License](https://img.shields.io/packagist/l/eclipsephp/plugin-template)
 
 ## About
 This package serves as a PHP package template for packages developed by DataLinx. It is also a reference of how such a package should be configured.
@@ -21,7 +21,7 @@ See the [docs](docs/Documentation.md) for the complete PHP package development g
 ## Getting started
 * Download it with composer:
 ```shell
-composer require datalinx/php-package-template
+composer require eclipsephp/plugin-template
 ````
 * _Provide a simple example how to use the package._
 
