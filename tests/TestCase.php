@@ -1,6 +1,6 @@
 <?php
 
-namespace Eclipse\PluginTemplate\Tests;
+namespace Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

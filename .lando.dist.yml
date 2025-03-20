@@ -2,6 +2,7 @@ name: eclipsephp-plugin-template
 services:
   appserver:
     type: php:custom
+    xdebug: "debug,develop,coverage"
     via: cli
     overrides:
       image: slimdeluxe/php:8.2-v1.0
@@ -18,3 +19,7 @@ tooling:
     service: appserver
     description: Fix code style issues
     cmd: "composer format"
+  testbench:
+    service: appserver
+    description: Run testbench CLI
+    cmd: "vendor/bin/testbench"

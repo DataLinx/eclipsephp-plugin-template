@@ -12,7 +12,6 @@
 # Ignore all development content with "export-ignore".
 /.github export-ignore
 /.husky export-ignore
-/.idea export-ignore
 /docs export-ignore
 /env export-ignore
 /tests export-ignore
@@ -22,7 +21,9 @@
 /.gitignore export-ignore
 /.lando.dist.yml export-ignore
 /.php-cs-fixer.dist.php export-ignore
-/commitlint.config.js export-ignore
+/commitlint.config.cjs export-ignore
 /package.json export-ignore
 /package-lock.json export-ignore
 /phpunit.xml.dist export-ignore
+/README.md export-ignore
+/testbench.example.yaml export-ignore
