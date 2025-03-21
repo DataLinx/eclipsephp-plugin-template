@@ -1,4 +1,4 @@
-# PHP Package Template
+# Eclipse Filament plugin template
 
 ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/eclipsephp/plugin-template)
 ![Packagist Version](https://img.shields.io/packagist/v/eclipsephp/plugin-template)
@@ -9,19 +9,19 @@
 ![Packagist License](https://img.shields.io/packagist/l/eclipsephp/plugin-template)
 
 ## About
-This package serves as a PHP package template for packages developed by DataLinx. It is also a reference of how such a package should be configured.
+This package serves as a Filament plugin template for plugins developed by DataLinx for [Eclipse](https://github.com/DataLinx/eclipsephp-app), our web app based on Filament. It is also a reference of how such a package should be configured.
 
 The template is opinionated — it's based on our tech stack, which includes JetBrains PhpStorm.
 
-See the [docs](docs/Documentation.md) for the complete PHP package development guidelines. 
+This template works on and expands our [PHP package template](https://github.com/DataLinx/php-package-template).
 
 ## Requirements
-- PHP >= 8.1
+- PHP >= 8.2 (due to Pest 3 requirement)
 
 ## Getting started
 * Download it with composer:
 ```shell
-composer require eclipsephp/plugin-template
+  composer require eclipsephp/plugin-template
 ````
 * _Provide a simple example how to use the package._
 
