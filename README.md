@@ -3,7 +3,7 @@
 ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/eclipsephp/plugin-template)
 ![Packagist Version](https://img.shields.io/packagist/v/eclipsephp/plugin-template)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/eclipsephp/plugin-template)
-[![Test runner](https://github.com/DataLinx/eclipsephp-plugin-template/actions/workflows/test-runner.yml/badge.svg)](https://github.com/DataLinx/eclipsephp-plugin-template/actions/workflows/test-runner.yml)
+[![Tests](https://github.com/DataLinx/eclipsephp-plugin-template/actions/workflows/test-runner.yml/badge.svg)](https://github.com/DataLinx/eclipsephp-plugin-template/actions/workflows/test-runner.yml)
 [![codecov](https://codecov.io/gh/DataLinx/eclipsephp-plugin-template/graph/badge.svg?token=1HKSY5O6IW)](https://codecov.io/gh/DataLinx/eclipsephp-plugin-template)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 ![Packagist License](https://img.shields.io/packagist/l/eclipsephp/plugin-template)
