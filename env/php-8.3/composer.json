@@ -1,4 +1,5 @@
 {
+    "name": "eclipsephp/plugin-template",
     "require": {
         "wikimedia/composer-merge-plugin": "dev-master"
     },
@@ -8,6 +9,11 @@
                 "/usr/local/src/composer.json"
             ],
             "merge-scripts": true
+        },
+        "laravel": {
+            "providers": [
+                "Eclipse\\PluginTemplate\\PluginTemplateServiceProvider"
+            ]
         }
     },
     "config": {
@@ -19,12 +25,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Eclipse\\PluginTemplate\\": "src/"
+            "Eclipse\\PluginTemplate\\": "src/",
+            "Eclipse\\PluginTemplate\\Factories\\": "database/factories/",
+            "Eclipse\\PluginTemplate\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Eclipse\\PluginTemplate\\Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/",
+            "Workbench\\Database\\Factories\\": "workbench/database/factories/",
+            "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
         }
     }
 }
