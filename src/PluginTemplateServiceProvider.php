@@ -2,14 +2,15 @@
 
 namespace Eclipse\PluginTemplate;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Eclipse\Common\Foundation\Providers\PackageServiceProvider;
+use Eclipse\Common\Package;
+use Spatie\LaravelPackageTools\Package as SpatiePackage;
 
 class PluginTemplateServiceProvider extends PackageServiceProvider
 {
     public static string $name = 'plugin-template';
 
-    public function configurePackage(Package $package): void
+    public function configurePackage(SpatiePackage|Package $package): void
     {
         $package->name(static::$name)
             ->hasConfigFile()
