@@ -1,4 +1,4 @@
-#file: noinspection ComposeUnknownKeys
+#file: noinspection ComposeUnknownKeys,YAMLSchemaValidation
 name: eclipsephp-plugin-template
 services:
   appserver:
