@@ -1,12 +1,11 @@
-#file: noinspection ComposeUnknownKeys,YAMLSchemaValidation
-name: eclipsephp-plugin-template-8.3
+name: eclipse-plugin-template-8.4
 services:
   appserver:
-    type: php:custom
+    type: php:8.4
     via: cli
     app_mount: delegated
     overrides:
-      image: slimdeluxe/php:8.3-v1.2
+      image: slimdeluxe/php:8.4-v1.5
       volumes:
         # Mount the project root directory to /app
         - "../..:/app"
