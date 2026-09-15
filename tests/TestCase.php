@@ -10,8 +10,6 @@ abstract class TestCase extends BaseTestCase
 {
     use WithWorkbench;
 
-    protected ?User $superAdmin = null;
-
     protected ?User $user = null;
 
     protected function setUp(): void
@@ -25,6 +23,20 @@ abstract class TestCase extends BaseTestCase
         $this->withoutVite();
     }
 
+    protected function defineEnvironment($app): void
+    {
+        parent::defineEnvironment($app);
+
+        $token = getenv('TEST_TOKEN') ?: 'default';
+        $path = $app->storagePath("framework/views/$token");
+
+        if (! is_dir($path)) {
+            mkdir($path, 0777, true);
+        }
+
+        $app['config']->set('view.compiled', $path);
+    }
+
     /**
      * Run database migrations
      */
@@ -36,22 +48,9 @@ abstract class TestCase extends BaseTestCase
     }
 
     /**
-     * Set up default "super admin" user
+     * Set up a user
      */
-    protected function setUpSuperAdmin(): self
-    {
-        $this->superAdmin = User::factory()->make();
-        $this->superAdmin->assignRole('super_admin')->save();
-
-        $this->actingAs($this->superAdmin);
-
-        return $this;
-    }
-
-    /**
-     * Set up a common user with no roles or permissions
-     */
-    protected function setUpCommonUser(): self
+    protected function setUpUser(): self
     {
         $this->user = User::factory()->create();
 

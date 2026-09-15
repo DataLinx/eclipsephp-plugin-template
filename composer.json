@@ -40,18 +40,19 @@
         }
     },
     "require": {
-        "php": "^8.2",
-        "bezhansalleh/filament-shield": "^3.3",
+        "php": "^8.3",
         "datalinx/php-utils": "^2.5",
         "eclipsephp/common": "dev-main",
-        "filament/filament": "^3.3",
+        "filament/filament": "^5.0",
+        "laravel/framework": "^11.0|^12.0",
         "spatie/laravel-package-tools": "^1.19"
     },
     "require-dev": {
         "laravel/pint": "^1.21",
-        "orchestra/testbench": "^10.1",
-        "pestphp/pest": "^3.7",
-        "pestphp/pest-plugin-livewire": "^3.0"
+        "orchestra/testbench": "^9.9|^10.11",
+        "pestphp/pest": "^4.7",
+        "pestphp/pest-plugin-laravel": "^4.1",
+        "pestphp/pest-plugin-livewire": "^4.1"
     },
     "scripts": {
         "post-autoload-dump": [
@@ -61,18 +62,15 @@
         "post-install-cmd": "@setup",
         "post-update-cmd": "@setup",
         "format": "vendor/bin/pint",
-        "test": "vendor/bin/testbench package:test",
+        "test": "vendor/bin/pest --parallel",
         "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": "@php vendor/bin/testbench workbench:build --ansi",
-        "serve": [
-            "Composer\\Config::disableProcessTimeout",
-            "@build",
-            "@php vendor/bin/testbench serve --ansi"
-        ],
         "setup": [
-            "@php vendor/bin/testbench vendor:publish --provider='Spatie\\Permission\\PermissionServiceProvider'",
-            "@php vendor/bin/testbench vendor:publish --tag='filament-shield-config'",
+            "@php -r \"if (!file_exists('workbench/.env')) { copy('workbench/.env.example', 'workbench/.env'); echo '.env file created from .env.example\\n'; }\"",
+            "@php vendor/bin/testbench key:generate --ansi",
+            "npm install",
+            "@php vendor/bin/testbench filament:assets",
             "@php vendor/bin/testbench package:sync-skeleton"
         ]
     },

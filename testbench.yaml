@@ -1,10 +1,11 @@
-laravel: '@testbench'
+laravel: './workbench'
 
 providers:
   - Workbench\App\Providers\WorkbenchServiceProvider
 
 migrations:
   - workbench/database/migrations
+  - database/migrations
 
 seeders:
   - Workbench\Database\Seeders\DatabaseSeeder
@@ -16,7 +17,7 @@ workbench:
   discovers:
     web: true
     api: false
-    commands: false
+    commands: true
     components: false
     views: false
   build:
@@ -26,7 +27,3 @@ workbench:
     - migrate-fresh
   assets:
     - laravel-assets
-  sync:
-    - from: storage
-      to: workbench/storage
-      reverse: true
