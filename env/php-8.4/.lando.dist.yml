@@ -1,7 +1,8 @@
-name: eclipse-plugin-template-8.4
+name: eclipse-plugin-template-8-4
 services:
   appserver:
     type: php:8.4
+    # noinspection YAMLSchemaValidation
     via: cli
     app_mount: delegated
     overrides:
