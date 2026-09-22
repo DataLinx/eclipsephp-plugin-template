@@ -4,6 +4,7 @@
     "keywords": [
         "eclipse",
         "filament",
+        "plugin",
         "laravel"
     ],
     "homepage": "https://github.com/DataLinx/eclipsephp-plugin-template",
@@ -48,8 +49,9 @@
         "spatie/laravel-package-tools": "^1.19"
     },
     "require-dev": {
+        "laravel/boost": "^2.9",
         "laravel/pint": "^1.21",
-        "orchestra/testbench": "^9.9|^10.11",
+        "orchestra/testbench": "^9.17|^10.11|^11.2",
         "pestphp/pest": "^4.7",
         "pestphp/pest-plugin-laravel": "^4.1",
         "pestphp/pest-plugin-livewire": "^4.1"
@@ -71,7 +73,10 @@
             "@php vendor/bin/testbench key:generate --ansi",
             "npm install",
             "@php vendor/bin/testbench filament:assets",
-            "@php vendor/bin/testbench package:sync-skeleton"
+            "@php vendor/bin/testbench package:sync-skeleton",
+            "@php vendor/bin/testbench vendor:publish --tag=eclipse-ai-guidelines --force --ansi",
+            "@php vendor/bin/testbench boost:update --ansi",
+            "if [ -d workbench/.junie ]; then rsync -a workbench/.junie/ .junie/ && rm -rf workbench/.junie; fi"
         ]
     },
     "extra": {
