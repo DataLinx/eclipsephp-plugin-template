@@ -25,7 +25,7 @@
 /.lando.dist.yml export-ignore
 /.php-cs-fixer.dist.php export-ignore
 /AGENTS.md export-ignore
-/commitlint.config.cjs export-ignore
+/commitlint.config.js export-ignore
 /package.json export-ignore
 /package-lock.json export-ignore
 /phpunit.xml.dist export-ignore
