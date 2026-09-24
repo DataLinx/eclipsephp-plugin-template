@@ -76,7 +76,7 @@
             "@php vendor/bin/testbench package:sync-skeleton",
             "@php vendor/bin/testbench vendor:publish --tag=eclipse-ai-guidelines --force --ansi",
             "if [ -d workbench/.ai/guidelines ]; then rsync -a workbench/.ai/guidelines/ .ai/guidelines/ && rm -rf workbench/.ai/guidelines; fi",
-            "@php vendor/bin/testbench boost:update --ansi",
+            "if [ -f boost.json ]; then php vendor/bin/testbench boost:update --ansi; fi",
             "if [ -d workbench/.ai ] && [ -z \"$(ls -A workbench/.ai)\" ]; then rmdir workbench/.ai; fi"
         ]
     },
