@@ -18,6 +18,9 @@ abstract class TestCase extends BaseTestCase
         ini_set('display_errors', 1);
         error_reporting(E_ALL);
 
+        // Increase memory limit for tests
+        ini_set('memory_limit', '512M');
+
         parent::setUp();
 
         $this->withoutVite();
@@ -59,7 +62,7 @@ abstract class TestCase extends BaseTestCase
         return $this;
     }
 
-    public function ignorePackageDiscoveriesFrom()
+    public function ignorePackageDiscoveriesFrom(): array
     {
         return [
             // A list of packages that should not be auto-discovered when running tests
