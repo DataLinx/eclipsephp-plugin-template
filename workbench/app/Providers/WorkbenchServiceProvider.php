@@ -7,6 +7,7 @@ use Illuminate\Console\Events\CommandStarting;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Livewire\LivewireServiceProvider;
+use Workbench\Database\Seeders\DatabaseSeeder;
 
 class WorkbenchServiceProvider extends ServiceProvider
 {
@@ -18,6 +19,9 @@ class WorkbenchServiceProvider extends ServiceProvider
         $this->app->register(LivewireServiceProvider::class);
         $this->app->register(FilamentServiceProvider::class);
         $this->app->register(AdminPanelProvider::class);
+
+        // Set default seeder class
+        $this->app->bind('DatabaseSeeder', DatabaseSeeder::class);
     }
 
     /**
