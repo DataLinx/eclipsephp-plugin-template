@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/DataLinx/eclipsephp-plugin-template/compare/v1.0.0...v1.1.0) (2026-10-08)
+
+
+### Features
+
+* **workbench:** add boost command event listener and sync AI guidelines ([79d6eab](https://github.com/DataLinx/eclipsephp-plugin-template/commit/79d6eabedc25165c21514148a4cf491ad643fac8))
+* **workbench:** add UserResource with CRUD pages and table configuration ([d06673e](https://github.com/DataLinx/eclipsephp-plugin-template/commit/d06673e8f430bd80ab276cc33ccc5a91ae0817e2))
+
 ## 1.0.0 (2025-03-21)
 
 
