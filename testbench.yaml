@@ -7,9 +7,6 @@ migrations:
   - workbench/database/migrations
   - database/migrations
 
-seeders:
-  - Workbench\Database\Seeders\DatabaseSeeder
-
 workbench:
   start: '/'
   install: true
