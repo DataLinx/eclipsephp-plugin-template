@@ -21,6 +21,7 @@ services:
       - composer run setup --no-interaction
       - composer run build --no-interaction
   appserver_nginx:
+    # Set scanner to admin/login page and not the root, to prevent 403 error
     scanner:
       path: /admin/login
       retry: 5
