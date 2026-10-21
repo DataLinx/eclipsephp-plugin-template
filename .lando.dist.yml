@@ -42,9 +42,7 @@ proxy:
   pma:
     - pma.eclipse-plugin-template.lndo.site
 tooling:
-  php:
-    service: appserver
-  composer:
+  npm:
     service: appserver
   test:
     service: appserver
