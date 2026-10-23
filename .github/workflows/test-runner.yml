@@ -102,4 +102,5 @@ jobs:
           sed -i 's/APP_ENV=local/APP_ENV=testing/' workbench/.env
 
       - name: Run test suite
-        run: composer test -- --ci --parallel
+        # The --ci parameter is not needed, since GitHub actions already set the CI=true variable and it's autodetected by Pest
+        run: composer test
